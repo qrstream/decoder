@@ -11,7 +11,7 @@
     "expo": "^32.0.0",
     "jpeg-js": "^0.3.4",
     "jsqr": "^1.1.1",
-    "qrstream-decoder": "github:huajianmao/qrstream-decoder",
+    "qrstream-decoder": "github:qrstream/decoder",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-elements": "^0.19.1",
