@@ -6,4 +6,19 @@ QRStream Decoder
 
 A javascript library to decode the transferred QR code frames.
 
-Readme page coming soon!
+## Installation
+
+  `npm install qrstream/decoder`
+
+## Usage
+
+### Use as npm package
+  ``` javascript
+    var Decoder = require('qrstream-decoder');
+    var qrstream = Decoder();
+    qrstream.init(metadataInJson); // the Decoder should be initialized with the metadata in json.
+    qrstream.feed(payloadInJson); // When received a QR code and parsed it to json, feed to the Decoder
+    qrstream.fetch(); // It merges all the payload when transfer finished.
+  ```
+
+To find more details in how to use QRStream decoder, please refer to [our example](example/app).

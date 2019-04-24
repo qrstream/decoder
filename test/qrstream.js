@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var md5 = require('md5');
 
-var {Decoder} = require('../index');
+var Decoder = require('../index');
 
 describe('#qrstream', function() {
   it('should return correct seq number', function() {
@@ -19,5 +19,11 @@ describe('#qrstream', function() {
     seq = qrstream.feed("asdf003hello world3");
     expect(seq).to.equal(3);
     expect(qrstream.payloads[2]).to.equal("hello world3")
+  });
+
+  it('should print Wrong format', function() {
+    var qrstream = Decoder();
+    qrstream.init("asdf|3|FILE|50|md5sum|hello.txt");
+    expect(qrstream.status).to.equal(0);
   })
 });
