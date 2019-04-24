@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huajianmao/qrstream-decoder.git"
+    "url": "git+https://github.com/qrstream/decoder.git"
   },
   "keywords": [
     "qrstream",
@@ -27,7 +27,7 @@
   "author": "Huajian Mao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/huajianmao/qrstream-decoder/issues"
+    "url": "https://github.com/qrstream/decoder/issues"
   },
-  "homepage": "https://github.com/huajianmao/qrstream-decoder#readme"
+  "homepage": "https://github.com/qrstream/decoder#readme"
 }
