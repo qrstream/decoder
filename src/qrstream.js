@@ -39,15 +39,16 @@ var qrstream = function () {
       if (_this.status === 1 && rawPayload && rawPayload.startsWith(metadata.tag)) {
         var seq = rawPayload.substr(metadata.tag.length, metadata.seqlen);
         seq = parseInt(seq, 16);
-        var content = rawPayload.substr(metadata.tag.length + metadata.seqlen);
 
         if (seq <= metadata.count) {
-          _this.payloads[seq-1] = content;
+          _this.payloads[seq-1] = rawPayload.substr(metadata.tag.length + metadata.seqlen);
           _this.missingIDs.delete(seq);
 
           if (_this.missingIDs.size === 0) {
             _this.status = 2;
           }
+        } else {
+          seq = -1;
         }
         return seq;
       }
