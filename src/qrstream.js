@@ -60,9 +60,7 @@ var qrstream = function () {
     return _this;
   };
 
-  return {
-    Decoder
-  };
+  return Decoder;
 }();
 
 (function (factory) {
