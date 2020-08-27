@@ -21,4 +21,4 @@ A javascript library to decode the transferred QR code frames.
     qrstream.fetch(); // It merges all the payload when transfer finished.
   ```
 
-To find more details in how to use QRStream decoder, please refer to [our example](example/app).
+To find more details in how to use QRStream decoder, please refer to [our example](https://github.com/qrstream/decoder-example-rn).
